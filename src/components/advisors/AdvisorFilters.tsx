@@ -102,7 +102,7 @@ const AdvisorFilters: React.FC<AdvisorFiltersProps> = ({ filters, setFilters }) 
                 <SelectValue placeholder="Select location" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Locations</SelectItem>
+                <SelectItem value="all">All Locations</SelectItem>
                 {LOCATIONS.map((location) => (
                   <SelectItem key={location} value={location}>
                     {location}
@@ -151,7 +151,7 @@ const AdvisorFilters: React.FC<AdvisorFiltersProps> = ({ filters, setFilters }) 
                 <SelectValue placeholder="Select audience" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="">All Audiences</SelectItem>
+                <SelectItem value="all">All Audiences</SelectItem>
                 {AUDIENCES.map((audience) => (
                   <SelectItem key={audience} value={audience}>
                     {audience}
